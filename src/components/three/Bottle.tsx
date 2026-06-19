@@ -1,6 +1,6 @@
 import { useRef, type MutableRefObject } from "react";
 import { useFrame } from "@react-three/fiber";
-import { Float, Sparkles, RoundedBox, MeshTransmissionMaterial } from "@react-three/drei";
+import { Float, RoundedBox, MeshTransmissionMaterial } from "@react-three/drei";
 import * as THREE from "three";
 import type { MousePosition } from "../../hooks/useMouse";
 
