@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  body {
+    @apply bg-[#0e0b08] text-[#f5efe6] antialiased overflow-x-hidden font-sans;
+  }
+  h1, h2, h3 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply border border-amber-100/10 bg-amber-50/5 backdrop-blur-xl;
+  }
+  .text-gold {
+    @apply bg-gradient-to-r from-amber-200 via-yellow-100 to-amber-300 bg-clip-text text-transparent;
+  }
+  .eyebrow {
+    @apply text-xs uppercase tracking-[0.35em] text-amber-200/70;
+  }
+}
+
+.gold-line {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.6), transparent);
+}
